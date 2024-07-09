@@ -1,18 +1,24 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
+// import { useEffect, useState } from "react";
+// import axios from "axios";
 import "./App.css";
+import Todo from "./components/Todo";
 
 function App() {
-  const [data, setData] = useState([]);
+  // const [data, setData] = useState([]);
   //
-  useEffect(() => {
-    axios
-      .get("http://localhost:3000/todos")
-      .then((res) => setData(res.data))
-      .catch((error) => console.log(error));
-  }, []);
+  // useEffect(() => {
+  //   axios
+  //     .get("http://localhost:3000/todos")
+  //     .then((res) => setData(res.data))
+  //     .catch((error) => console.log(error));
+  // }, []);
   //
-  return <>{JSON.stringify(data)}</>;
+  // return <>{JSON.stringify(data)}</>;
+  return (
+    <>
+      <Todo />
+    </>
+  );
 }
 
 export default App;

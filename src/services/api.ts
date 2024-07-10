@@ -27,3 +27,11 @@ export const getTodo = async (id:number)=>{
     return (await axiosInstance.get<Todo>(`todos/${id}`)).data
 
 }
+
+export const createTodo = async (data:Todo) => {
+    return await axiosInstance.post('todos',data)
+}
+
+export const updateTodo = async (data:Todo) => {
+    await axiosInstance.put(`todos/${data.id}`,data)
+}

@@ -1,7 +1,8 @@
 // import { useEffect, useState } from "react";
 // import axios from "axios";
 import "./App.css";
-import Todos from "./components/Todos";
+import Projects from "./components/Projects";
+// import Todos from "./components/Todos";
 
 function App() {
   // const [data, setData] = useState([]);
@@ -16,7 +17,8 @@ function App() {
   // return <>{JSON.stringify(data)}</>;
   return (
     <>
-      <Todos />
+      {<Projects />}
+      {/* <Todos /> */}
     </>
   );
 }
